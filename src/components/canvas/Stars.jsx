@@ -19,7 +19,7 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#000000"
+          color={props.starsColor}
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
@@ -29,12 +29,12 @@ const Stars = (props) => {
   );
 };
 
-const StarsCanvas = () => {
+const StarsCanvas = (props) => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
-          <Stars />
+          <Stars starsColor={props.starsColor} />
         </Suspense>
 
         <Preload all />

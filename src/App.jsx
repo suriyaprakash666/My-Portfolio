@@ -10,22 +10,27 @@ import {
   StarsCanvas,
 } from "./components";
 
+import "./index.css";
+
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-white">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-white dark:bg-black duration-100">
+        <div>
           <Navbar />
-          <div className="relative z-0">
+          <div className="relative z-0  pt-6 ">
             <Hero />
-            <StarsCanvas />
+            <StarsCanvas starsColor={`#FC4C02`} />
           </div>
         </div>
         <About />
+        <div className="relative">
+          <StarsCanvas starsColor={`#FC4C02`} />
+          <Tech />
+        </div>
         <Works />
-        <Tech />
         <div className="relative z-0">
-          <StarsCanvas />
+          <StarsCanvas starsColor={`#FC4C02`} />
           <Contact />
         </div>
       </div>

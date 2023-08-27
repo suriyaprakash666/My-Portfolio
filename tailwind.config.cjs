@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -13,13 +14,13 @@ module.exports = {
         "white-100": "#f3f3f3",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0px 25px 70px -10px #211e35",
       },
       screens: {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.svg')",
+        "hero-pattern": "url('/src/assets/bg.png')",
       },
     },
   },

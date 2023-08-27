@@ -16,6 +16,10 @@ import {
   ytbg,
   pointbreak,
   expenseapp,
+  instagram,
+  linkedin,
+  github,
+  twitter,
 } from "../assets";
 
 export const navLinks = [
@@ -30,6 +34,13 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+];
+
+const links = [
+  {
+    icon: linkedin,
+    source_link: "https://www.linkedin.com/in/suriyaprakashs666/",
   },
 ];
 
@@ -161,4 +172,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, projects };
+export { services, technologies, projects, links };

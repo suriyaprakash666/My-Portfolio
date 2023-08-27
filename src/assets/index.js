@@ -22,6 +22,13 @@ import ytbg from "./ytbg.png";
 import pointbreak from "./pointbreak.png";
 import expenseapp from "./expenseapp.png";
 
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import gitHub from "./github.svg";
+import twitter from "./twitter.svg";
+import sun from "./sun.svg";
+import bg from "./bg.png";
+
 export {
   logo,
   mobile,
@@ -44,4 +51,10 @@ export {
   ytbg,
   pointbreak,
   expenseapp,
+  instagram,
+  linkedin,
+  gitHub,
+  twitter,
+  sun,
+  bg,
 };

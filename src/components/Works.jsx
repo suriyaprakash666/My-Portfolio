@@ -24,43 +24,49 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-gray-900 p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-gray-100 dark:bg-gray-900 p-[1px] rounded-2xl sm:w-[360px] w-full shadow-card orange-gradient "
       >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <div className="dark:bg-gray-900 bg-gray-100 p-5 rounded-2xl">
+          <div className="relative w-full h-[230px]">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
+          <div className="mt-5">
+            <h3 className="text-black dark:text-white font-bold text-[24px] dark:orange-text-gradient">
+              {name}
+            </h3>
+            <p className="mt-2 text-gray-800 dark:text-gray-200 text-[14px]">
+              {description}
             </p>
-          ))}
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>
@@ -78,7 +84,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-gray-900 text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-gray-900 dark:text-gray-100 text-[17px] max-w-full leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
