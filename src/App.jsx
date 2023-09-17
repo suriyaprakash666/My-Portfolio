@@ -20,11 +20,13 @@ const App = () => {
           <Navbar />
           <div className="relative z-0  pt-6 ">
             <Hero />
+
             <StarsCanvas starsColor={`#FC4C02`} />
           </div>
         </div>
         <About />
-        <div className="relative">
+
+        <div className="relative ">
           <StarsCanvas starsColor={`#FC4C02`} />
           <Tech />
         </div>

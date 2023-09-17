@@ -8,20 +8,20 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`relative inset-0 top-[120px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start justify-between `}
+        className={`relative inset-0 top-[80px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start justify-between `}
       >
         <div>
           <img
             src={bg}
-            className="relative lg:h-[700px] lg:w-[700px] lg:bottom-[125px] sm:bottom-[100px] md:bottom-[50px] "
+            className="relative lg:h-[700px] lg:w-[760px] lg:bottom-[50px] lg:right-[50px] sm:bottom-[100px] md:bottom-[50px] "
           ></img>
         </div>
-        <div className="relative flex flex-row right-16 ">
-          <div className=" flex flex-col justify-center items-center mt-5 pr-6">
+        <div className="relative flex flex-row justify-center items-center right-16 ">
+          <div className=" flex flex-col justify-center items-center mt-5 pr-[50px]">
             <div className="w-5 h-5 rounded-full bg-[#FF5F1F]" />
-            <div className="w-1 sm:h-80 h-40 orange-gradient" />
+            <div className="w-1 sm:h-80 h-60 orange-gradient" />
           </div>
-          <div className="mt-5">
+          <div className="mt-5 justify-center items-start">
             <h1
               className={`${styles.heroHeadText} text-black dark:text-white pt-[20px]`}
             >
@@ -30,8 +30,10 @@ const Hero = () => {
             <p
               className={`${styles.heroSubText} mt-2 text-black-100 dark:text-gray-300`}
             >
-              I develop user interfaces <br className="sm:block hidden" />
-              and web applications
+              I'm a versatile full-stack developer,
+              <br className="sm:block hidden" /> seamlessly bridging front-end
+              finesse with <br className="sm:block hidden" />
+              back-end prowess to create holistic digital solutions.
             </p>
             <div className="mt-8">
               <Links />
