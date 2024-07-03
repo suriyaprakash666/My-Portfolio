@@ -8,7 +8,10 @@ const Links = () => {
       <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
         <div className="flex justify-around items-center">
           <div>
-            <a href="https://www.linkedin.com/in/suriyaprakashs666/">
+            <a
+              href="https://www.linkedin.com/in/suriyaprakashs666/"
+              target="_blank"
+            >
               <img src={linkedin} />
             </a>
           </div>

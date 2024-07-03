@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`relative inset-0 top-[80px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start justify-between `}
+        className={`relative inset-0 top-[80px] max-w-full mx-auto ${styles.paddingX} flex lg:flex-row md:flex items-start justify-between `}
       >
         <div>
           <img
             src={bg}
-            className="relative lg:h-[700px] lg:w-[760px] lg:bottom-[50px] lg:right-[50px] sm:bottom-[100px] md:bottom-[50px] "
+            className="relative lg:h-[700px] lg:w-[760px] lg:bottom-[50px] lg:right-[50px] sm:height-[300px] sm:width-[200px] sm:bottom-[100px] md:bottom-[50px] "
           ></img>
         </div>
         <div className="relative flex flex-row justify-center items-center right-16 ">

@@ -39,7 +39,7 @@ const Contact = () => {
           alert("Message Sent!");
         },
         (error) => {
-          alert("Message not send! try again later");
+          alert("Message not send! Try again later");
         }
       );
     setInputValues({
@@ -67,6 +67,7 @@ const Contact = () => {
               ref={form}
               onSubmit={sendEmail}
               className="mt-12 flex flex-col gap-8"
+              style={{ maxWidth: "400px" }} // Adjust the max-width here
             >
               <label className="flex flex-col">
                 <span className="text-black dark:text-white font-medium mb-4">
@@ -79,6 +80,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="What's your good name?"
                   className="bg-gray-300 dark:bg-gray-800  py-4 px-6 placeholder:text-secondary text-black dark:text-white rounded-lg outline-none border-none font-medium"
+                  style={{ width: "100%" }} // Adjust the width here
                 />
               </label>
               <label className="flex flex-col">
@@ -92,6 +94,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="What's your web address?"
                   className="bg-gray-300 dark:bg-gray-800 py-4 px-6 placeholder:text-secondary text-black dark:text-white rounded-lg outline-none border-none font-medium"
+                  style={{ width: "100%" }} // Adjust the width here
                 />
               </label>
               <label className="flex flex-col">
@@ -106,6 +109,7 @@ const Contact = () => {
                   placeholder="What you want to say?"
                   className="bg-gray-300 dark:bg-gray-800 py-4 px-6 placeholder:text-secondary 
              text-black dark:text-white rounded-lg outline-none border-none font-medium"
+                  style={{ width: "100%" }} // Adjust the width here
                 />
               </label>
 
